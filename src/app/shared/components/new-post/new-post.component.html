@@ -1,0 +1,33 @@
+<!-- Generar un nuevo POST -->
+<main class="m-4 m-md-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="widget">
+                <p [ngClass]="page.class">{{ page.title }}</p>
+                <form [formGroup]="formPost" (ngSubmit)="sendPost()" class="formulario">
+                    <input type="text" [ngClass]="post.class" placeholder="{{post.title}}" formControlName="titulo_entrada" id="titulo_entrada">
+                    <textarea class="form-control mt-4 texto" maxlength="900" placeholder="{{post.text}}"
+                    formControlName="post" id="post"></textarea>
+                    <label class="texto mt-4">{{select.defaultOption_title}}</label>
+                    <select [ngClass]="select.class" formControlName="categorie">
+                        <option *ngFor="let option of mockCategorias" [value]="option.id_categoria">
+                            {{option.titulo_categoria}}
+                        </option>
+                      </select>
+                    <div class="d-flex justify-content-end">
+                        <button [ngClass]="button.class">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+                                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            </svg>
+                            {{ button.title }}
+                        </button>
+                    </div>
+                </form>
+                <app-alert-model [alert]="alert" [showAlert]="showAlert"></app-alert-model>
+            </div>
+        </div>   
+    </div>
+</main>

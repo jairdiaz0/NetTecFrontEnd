@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navjd">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">{{mainMenu.title}}</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostar / Ocultar Menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-md-4 mb-2 mb-md-0" [routerLink]="item.router" *ngFor="let item of mainMenu.defaultmenu">
+                        <li class="nav-item">
+                            <a  class = "nav-link a-link">  
+                                {{item.itemMenu}}
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link a-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menú
+                            </a>
+                            <ul class="dropdown-menu menu-dropdown" aria-label="dropdown-menu">
+                                <li [routerLink]="item.router" *ngFor="let item of mainMenu.defaultOptions">
+                                    <a class="dropdown-item rounded a-link">{{item.name}}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form action="" class="d-flex">
+                        <input type="search" class="form-control me-2" placeholder="{{mainMenu.defaultSearch}}" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="button">{{mainMenu.defaultSearch}}</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

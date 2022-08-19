@@ -1,0 +1,23 @@
+/*Texto general de la página*/
+
+.titulo {
+    font-variant: small-caps;
+}
+
+.texto {
+    color: var(--color-2);
+}
+
+/*Tamaño del TextArea del Formulario*/
+
+.formulario textarea {
+    min-height: 12rem;
+    max-height: 16rem;
+}
+
+/*Tamaño y redondear imagen*/
+
+.widget img {
+    width: 20%;
+    border-radius: 10rem;
+}

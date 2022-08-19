@@ -1,0 +1,15 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <small class="fw-bold card-title">{{getUserName()}}
+        </small>
+    </div>
+    <div class="card-body">
+      <small class="card-text">
+        {{respuesta?.contenido}}
+      </small>
+      <div class="d-flex justify-content-end">
+        <button [ngClass]="button.class" (click)="likeComment()" >{{button.title}}</button>
+        <span class="texto fw-bold">{{respuesta?.ranking}}</span>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="m-4 m-sm-5">
+    <p [ngClass]="page.class">{{page.title}}</p>
+    <div class="widget mb-5" *ngFor="let pregunta of newPosts">
+        <div class="one_post mt-5">
+            <a >
+                <img appImgBroken src="" alt="Foto de Perfil" class="img-thumbnail me-2">
+            </a>
+            <a class="titulo" *ngIf="pregunta.usuario?.persona">{{pregunta.usuario?.persona?.nombre}} {{pregunta.usuario?.persona?.apellido_paterno}} {{pregunta.usuario?.persona?.apellido_materno}}</a>
+            <a class="titulo" *ngIf="pregunta.usuario==null">NaN => Guest</a>
+            <p class="titulo">en <a class="titulo" >{{pregunta.subcategoria?.titulo_subcategoria}}</a></p>
+        </div>
+        <div class="formulario">
+            <input disabled type="text" class="form-control titulo texto text-center fw-bold" name="titulo_entrada" 
+                id="titulo_entrada" [value]="pregunta.titulo">
+            
+            <textarea disabled class="form-control mt-4 texto" [value]="pregunta.descripcion"
+                name="post" id="post"></textarea>
+            <div class="d-flex justify-content-center justify-content-md-end">
+                <button (click)="showCommentBox(pregunta)" [ngClass]="buttonComment.class">
+                    {{buttonComment.title}}
+                </button>
+                <button (click)="showAnswerBox(pregunta)"
+                 [ngClass]="buttonAnswer.class">
+                    {{buttonAnswer.title}}
+                </button>
+            </div>
+            <div *ngIf="pregunta.showAnswerBox">
+                <app-answer-box [pregunta]="pregunta" [user] = "user"></app-answer-box>
+            </div>
+            <div *ngIf="pregunta.showComments">
+                <app-comments-post [pregunta]="pregunta" [user] = "user"></app-comments-post>
+            </div>
+        </div>
+    </div>
+</div>

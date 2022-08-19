@@ -1,0 +1,8 @@
+/*Aviso de que el campo es invalido*/
+textarea.ng-invalid.ng-touched{
+    border: solid 2px rgb(163, 43, 43) !important;
+}
+/*Aviso de que el campo es valido*/
+textarea.ng-valid.ng-touched{
+    border: solid 2px rgb(43, 163, 79) !important;
+}

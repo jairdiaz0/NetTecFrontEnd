@@ -1,0 +1,11 @@
+{
+    "respuestas" : [
+        {
+            "id_respuesta": 1,
+            "contenido": "Mi primera pregunta de prueba asldkjaslkdjaslkdjaskldjaskldjaklsdjkl",
+            "ranking": 9,
+            "id_pregunta": 1,
+            "id_usuario": 0
+        }
+    ]
+}

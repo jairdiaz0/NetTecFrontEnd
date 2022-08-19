@@ -1,0 +1,44 @@
+/*Nos permite identificar la parte del router-outlet*/
+.home-wrapper{
+    background: var(--background-2);
+}
+
+.bd{
+    min-height: 92.6vh;
+}
+
+/*Nos permite manejar el estilo del navbardash*/
+.navbardash {
+    position: fixed;
+    min-height: 92.6vh;
+}
+
+.navbardashBG {
+    background: #262a34;
+}
+
+/*Nos permite manejar el estilo de la sección extra final*/
+.more{
+    position: fixed;
+}
+
+/*Cambios sin Bootstrap*/
+
+@media screen and (max-width:576px) {
+    .navbardash {
+        min-height: auto;
+        position: static;
+    }
+    .navbardash svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px){
+    .navbardash {
+        min-width: auto;
+    }
+    .navbardash .logo {
+        display: none;
+    }
+}

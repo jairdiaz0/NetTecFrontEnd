@@ -1,0 +1,14 @@
+<div class="card mt-3">
+    <div [ngClass]="cardHeader.class">
+        <small [ngClass]="cardHeader.classSmall">{{getUserName()}}</small>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formAnswer">
+            <div class="form-group">
+                <small for="comment" [ngClass]="cardBody.classSmall">{{cardBody.title}}</small>
+                <textarea formControlName = "comment" class="form-control" id="comment" rows="4"></textarea>
+            </div>
+        </form>
+    </div>
+    <app-alert-model [alert]="alert" [showAlert]="showAlert"></app-alert-model>
+</div>

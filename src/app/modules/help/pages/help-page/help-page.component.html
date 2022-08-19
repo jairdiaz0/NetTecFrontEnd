@@ -1,0 +1,29 @@
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <p [ngClass]="sectionHeading.class">{{sectionHeading.title}}</p>
+    <!--Section description-->
+    <p [ngClass]="sectionDescription.class">{{sectionDescription.title}}</p>
+    <div class="row">
+        <!--Grid column-->
+        <div class="col-12 mb-md-0 mb-5">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12">
+                    <div class="">
+                        <app-anser-box-model #answerBox [user]="user"></app-anser-box-model>
+                        <div class="justify-content-end d-flex">
+                            <button (click)="sendComment()" [ngClass]="buttonSend.class">{{buttonSend.title}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+        </div>
+        <!--Grid column-->
+    </div>
+
+</section>
+<!--Section: Contact v.2-->

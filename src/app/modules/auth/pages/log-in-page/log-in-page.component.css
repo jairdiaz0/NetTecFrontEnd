@@ -1,0 +1,49 @@
+/*Estilo del componente*/
+.page{
+    background-color: var(--background-2);
+    position:absolute;
+}
+/*Aviso de que el campo es invalido*/
+input.ng-invalid.ng-touched{
+    border: solid 2px rgb(163, 43, 43) !important;
+}
+/*Aviso de que el campo es valido*/
+input.ng-valid.ng-touched{
+    border: solid 2px rgb(43, 163, 79) !important;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #e76f51, #f4a261, #2a9d8f, #264653);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #e76f51, #f4a261, #2a9d8f, #264653);
+}
+
+/*Estilos extra*/
+.texto {
+    color: #545454;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.titulo {
+    color: #5f1313;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+/*Estilos sin boostrap*/
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+}

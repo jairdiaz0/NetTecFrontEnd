@@ -1,0 +1,9 @@
+<div class="card border-success">
+    <div class="card-header"><small>ID: {{categoria?.id_categoria}}</small></div>
+    <div class="card-body text-dark">
+      <span class="card-title h5">{{categoria?.titulo_categoria}}</span>
+      <div [ngClass]="button.classContainer">
+        <button (click)="goToCategorie()" [ngClass]="button.class">{{button.title}}</button>
+      </div>
+    </div>
+</div>

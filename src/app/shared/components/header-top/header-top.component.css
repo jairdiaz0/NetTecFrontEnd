@@ -1,0 +1,10 @@
+.navjd{
+    background-color: var(--background-1);
+    font-variant: var(--font-variant-1);
+}
+.a-link{
+    cursor: pointer;
+}
+.menu-dropdown{
+    background-color: var(--background-2);
+}

@@ -1,0 +1,25 @@
+<section class="container-fluid">
+    <!-- Encabezado Menú -->
+    <div class="row">
+        <app-header-top class="col-12"></app-header-top>
+    </div>
+    <div class="row mt-5">
+        <!-- Parte del DashBoard -->
+        <div class="col-12 col-sm-3 col-lg-2 m-0 p-0" [ngClass]="navBarDash.classContainer">
+            <!-- Se imitan las columnas porque esta en position fixed -->
+            <app-side-bar class="col-12 col-sm-3 col-lg-2" [ngClass]="navBarDash.class"></app-side-bar>
+        </div>
+        <!-- Parte General -->
+        <div class="col-12 col-sm-6 col-lg-7 bd" [ngClass]="sectionGeneral.classContainer">
+            <div class="row">
+                <router-outlet [ngClass]="sectionGeneral.class"></router-outlet>
+            </div>
+        </div>
+        <!-- Parte de la Sección final como extra -->
+        <div class="col-12 col-sm-3 mt-2 d-none d-sm-block" [ngClass]="aside.classContainer">
+            <div [ngClass]="aside.class">
+                <app-more-aside></app-more-aside>
+            </div>
+        </div>
+    </div>
+</section>

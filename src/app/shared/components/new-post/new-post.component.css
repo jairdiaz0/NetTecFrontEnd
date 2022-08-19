@@ -1,0 +1,28 @@
+/*Tamaño del TextArea del Formulario*/
+
+.formulario textarea {
+    min-height: 12rem;
+    max-height: 16rem;
+}
+
+/*Aviso de que el campo es invalido*/
+.formulario > .ng-invalid.ng-touched{
+    border: solid 2px rgb(163, 43, 43) !important;
+}
+/*Aviso de que el campo es valido*/
+.formulario > .ng-valid.ng-touched{
+    border: solid 2px rgb(43, 163, 79) !important;
+}
+
+/*Caja final (Estedisticas y comentarios)*/
+
+.widget .estadisticas .caja {
+    flex: 1;
+}
+
+/*Tamaño y redondear imagen*/
+
+.widget .comentarios img {
+    width: 20%;
+    border-radius: 10rem;
+}

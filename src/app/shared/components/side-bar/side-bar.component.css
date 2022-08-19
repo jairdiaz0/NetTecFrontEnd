@@ -1,0 +1,41 @@
+.texto {
+    color: #545454;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+
+/*Quitar decoración a links*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*Todo perteneciente a la barra lateral*/
+
+.navbardash a:hover {
+    background: #1d5f3b;
+}
+
+.navbardash .menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+}
+
+.navbardash .logo {
+    background: #2e303b;
+}
+
+.navbardash .logo h2 {
+    font-size: 1.5rem;
+    color: #d8d8d8;
+    text-align: center;
+}
+
+@media screen and (max-height:500px){
+    .nettec{
+        display: none !important;
+    }
+}

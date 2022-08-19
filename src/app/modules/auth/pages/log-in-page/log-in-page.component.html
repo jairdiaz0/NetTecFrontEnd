@@ -1,0 +1,104 @@
+<main class="gradient-form page">
+    <div class="container-fluid mt-0 mt-sm-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-10">
+                <div class="card rounded-3 text-black">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card-body p-md-5">
+                                <div class="text-center">
+                                    <!-- Logo -->
+                                    <div class="icono ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-signpost-split-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M7 16h2V6h5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.8 2.4A1 1 0 0 0 14 2H9v-.586a1 1 0 0 0-2 0V7H2a1 1 0 0 0-.8.4L.225 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4h5v5z" />
+                                        </svg>
+                                        <p [ngClass]="page.class">{{page.title}}</p>
+                                    </div>
+                                </div>
+
+                                <!-- Form -->
+                                <form [formGroup]="formLogin" (ngSubmit)="sendLogin()">
+                                    <p [ngClass]="form.title_class">{{form.title}}</p>
+
+                                    <div class="row g-0">
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input [ngClass]="form.input_email_class" formControlName="email"
+                                                    type="email" placeholder="email"
+                                                    [maxlength]="form.input_email_max_length">
+                                                <label for="email"
+                                                    [ngClass]="form.label_email_class">{{form.label_email}}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0 justify-content-center">
+                                        <div class="col-12">
+                                            <div class="form-floating d-flex mb-3">
+                                                <input [ngClass]="form.input_password_class" formControlName="password"
+                                                    [type]="form.input_password_type_flag ? 'text' : 'password'"
+                                                    placeholder="password" [maxlength]="form.input_password_max_length">
+                                                <button title="Mostrar contraseña" id="btnMostrarPass" type="button"
+                                                    class="btn" (click)="changeTypePassword()"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                                <label for="password"
+                                                    [ngClass]="form.label_password_class">{{form.label_password}}</label>
+                                            </div>
+                                        </div>
+                                        <div [ngClass]="alert.class" role="alert" *ngIf="alert.flag">
+                                            {{alert.title}}
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div class="text-center pt-1 mb-3 pb-1">
+                                                <button [disabled]="formLogin.invalid"
+                                                    [ngClass]="button.class">{{button.title}}
+                                                </button>
+                                                <a [ngClass]="forgotPassword.class">
+                                                    {{forgotPassword.title}}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="d-flex align-items-center justify-content-around text-center pb-4 mt-3 texto">
+                                                <div>
+                                                    <p [ngClass]="signIn.class">{{signIn.title}}</p>
+                                                    <button [routerLink]="signIn.btn_router" [ngClass]="signIn.btn_class">
+                                                        {{signIn.btn_title}}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                <h4 class="mb-4">Lorem ipsum dolor sit amet consectetur</h4>
+                                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

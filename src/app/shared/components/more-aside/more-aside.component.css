@@ -1,0 +1,23 @@
+/*Caja final (Estedisticas y comentarios)*/
+
+.widget .estadisticas .caja {
+    flex: 1;
+}
+
+.widget .estadisticas .caja h3 {
+    font-size: 1.75rem;
+    color: #2b583f;
+}
+
+.widget .estadisticas .caja p {
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+
+/*Tamaño y redondear imagen*/
+
+.widget .comentarios img {
+    width: 20%;
+    border-radius: 10rem;
+}

@@ -1,0 +1,8 @@
+<div *ngIf="showAlert">
+      <hr>
+      <div [ngClass]="getClass()" role="alert">
+        <span>
+          {{alert?.flag == true ? alert?.title_true : alert?.title_false}}
+        </span>
+      </div>
+</div>

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-1: #385669;
+    --background-2: #f9f9f9;
+    --color-1: #3da5e2;
+    --color-2: #545454;
+    --font-variant-1: small-caps;
+}
+
+/*Texto general de la página*/
+.titulo {
+    color: #3da5e2;
+    font-variant: small-caps;
+}
+
+.texto {
+    color: #545454;
+}

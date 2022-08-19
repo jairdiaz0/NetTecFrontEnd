@@ -1,0 +1,4 @@
+<div *ngFor="let respuestas of respuestasArr">
+  <app-comment-model [pregunta]="pregunta" [respuesta]="respuestas" [user]="user"></app-comment-model>
+</div>
+<app-alert-model [alert]="alert" [showAlert]="noRespuestas()"></app-alert-model>

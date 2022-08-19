@@ -1,0 +1,22 @@
+{
+    "usuarios": [
+        {
+            "id_usuario": 0,
+            "correo": "admin@admin",
+            "contrasena": "adminadmin",
+            "id_persona": 0,
+            "id_rol": 0,
+            "persona": {
+                "id_persona": 0,
+                "apellido_paterno": "Sánchez",
+                "apellido_materno": "Díaz",
+                "nombre": "Edén Jair"
+            },
+            "rol": {
+                "id_rol": 0,
+                "nombre_rol": "Administrador",
+                "descripcion_rol": "Administrador"
+            }
+        }
+    ]
+}

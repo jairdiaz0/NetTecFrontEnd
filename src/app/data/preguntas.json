@@ -1,0 +1,344 @@
+{
+    "preguntas": [
+        {
+            "id_pregunta": 10,
+            "titulo": "Pregunta 1 Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 1,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        },
+        {
+            "id_pregunta": 0,
+            "titulo": "Pregunta jfaslkdjlaskjdkls Prueba",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam atque repellat possimus, illo ab culpa. Veniam voluptates necessitatibus qui voluptate porro, ipsam rerum inventore voluptatem quae, tenetur a quo.",
+            "id_usuario": 0,
+            "id_subcategoria": "A",
+            "usuario": {
+                "id_usuario": 0,
+                "correo": "edenjairdiaz@gmail.com",
+                "contrasena": "01001010",
+                "id_persona": 0,
+                "id_rol": 0,
+                "persona": {
+                    "id_persona": 0,
+                    "apellido_paterno": "Sánchez",
+                    "apellido_materno": "Díaz",
+                    "nombre": "Edén Jair"
+                },
+                "rol": {
+                    "id_rol": 0,
+                    "nombre_rol": "Administrador",
+                    "descripcion_rol": "Administrador"
+                }
+            },
+            "subcategoria": {
+                "id_subcategoria": "A",
+                "titulo_subcategoria": "Importante",
+                "id_categoria": "A",
+                "categoria": {
+                    "id_categoria": "A",
+                    "titulo_categoria": "Importante"
+                }
+            }
+        }
+    ]
+}
