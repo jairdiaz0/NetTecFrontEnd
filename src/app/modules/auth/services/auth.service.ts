@@ -30,6 +30,7 @@ export class AuthService {
   private sendCredentials(email: String, password: String): Observable<any> {
     const body = { email, password }
     return this._httpClient.post(`${this.URL}/auth/logIn`, body).pipe(
+      
       tap((responseOK: any) => {
         const { token } = responseOK;
         if (token) {

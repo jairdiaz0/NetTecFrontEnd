@@ -56,6 +56,8 @@ export class CommentsPostComponent implements OnInit, OnDestroy {
   private async getRespuestas(){
     if(this.pregunta?.id_pregunta){
       this.respuestasArr = await this.connectionDBService.getRespuestas(this.pregunta.id_pregunta);
+    }else{
+      this.respuestasArr = [];
     }
   }
 
