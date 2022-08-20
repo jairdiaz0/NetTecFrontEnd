@@ -1,6 +1,6 @@
 # NetTecFrontEnd
 Plataforma NetTec haciendo uso de (HTML, CSS, Bootstrap 5, TypeScript y ANGULAR).
-- > Link page: <a href='https://jairdiaz0.github.io/NetTecFrontEnd/home/publications' target="_blank"> Click Aquí </a>
+- > Link page: <a href="https://jairdiaz0.github.io/NetTecFrontEnd/home/publications" target="_blank"> Click Aquí </a>
 - > email: admin@admin
 - > password: adminadmin
 
