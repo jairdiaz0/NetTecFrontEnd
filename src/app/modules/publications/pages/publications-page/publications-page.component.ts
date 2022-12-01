@@ -16,7 +16,7 @@ import { SessionGuard } from '@core/guards/session/session.guard';
 export class PublicationsPageComponent implements OnInit {
   mockPostList?:Array<PreguntaModelMod>;
   user?: UsuarioModel;
-  
+
   constructor(
     private _connectionDBService$: ConnectionDBService,
     private sessionGuard:SessionGuard
@@ -36,5 +36,5 @@ export class PublicationsPageComponent implements OnInit {
   private async setQuestions(){
     this.mockPostList = await this._connectionDBService$.getPreguntas();
   }
-  
+
 }

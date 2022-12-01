@@ -30,6 +30,12 @@ export class CommentsPostComponent implements OnInit, OnDestroy {
     "class_true": [],
     "class_false": ['alert', 'alert-danger']
   }
+
+  buttonDelete = {
+    "title" : 'Eliminar Comentario',
+    "class" : ['btn', 'btn-outline-danger', 'btn-sm', 'titulo', 'fw-bold', 'mt-2', 'me-auto']
+  }
+
   constructor(
     private connectionDBService:ConnectionDBService
     ) { }
@@ -64,4 +70,13 @@ export class CommentsPostComponent implements OnInit, OnDestroy {
   noRespuestas(){
     return (this.respuestasArr?.length == 0);
   }
-} 
+
+  checkUserPost(respuesta: RespuestaModel){
+    console.log(respuesta)
+    return this.user?.id_usuario == respuesta.id_usuario||this.user?.id_rol == 102;
+  }
+
+  deletePostTmp(respuesta:RespuestaModel){
+    this.respuestasArr = this.respuestasArr?.filter((data)=>{return data != respuesta;})
+  }
+}

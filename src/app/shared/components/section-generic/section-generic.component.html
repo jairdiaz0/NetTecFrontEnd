@@ -1,6 +1,7 @@
 <div class="m-4 m-sm-5">
     <p [ngClass]="page.class">{{page.title}}</p>
     <div class="widget mb-5" *ngFor="let pregunta of newPosts">
+
         <div class="one_post mt-5">
             <a >
                 <img appImgBroken src="" alt="Foto de Perfil" class="img-thumbnail me-2">
@@ -10,12 +11,13 @@
             <p class="titulo">en <a class="titulo" >{{pregunta.subcategoria?.titulo_subcategoria}}</a></p>
         </div>
         <div class="formulario">
-            <input disabled type="text" class="form-control titulo texto text-center fw-bold" name="titulo_entrada" 
+            <input disabled type="text" class="form-control titulo texto text-center fw-bold" name="titulo_entrada"
                 id="titulo_entrada" [value]="pregunta.titulo">
-            
+
             <textarea disabled class="form-control mt-4 texto" [value]="pregunta.descripcion"
                 name="post" id="post"></textarea>
             <div class="d-flex justify-content-center justify-content-md-end">
+                <button (click)="deletePostTmp(pregunta)" *ngIf="checkUserPost(pregunta)" [ngClass]="buttonDelete.class">{{buttonDelete.title}}</button>
                 <button (click)="showCommentBox(pregunta)" [ngClass]="buttonComment.class">
                     {{buttonComment.title}}
                 </button>
@@ -32,4 +34,5 @@
             </div>
         </div>
     </div>
+    <div class="h1" *ngIf="!newPosts||newPosts?.length==0">No se encontrarón resultados 😢</div>
 </div>

@@ -20,11 +20,6 @@ export class HeaderTopComponent implements OnInit {
         router: ['/', 'account']
       },
       {
-        name: 'Configuración',
-        class: ['dropdown-item', 'rounded'],
-        router: ['/', 'account', 'configuration']
-      },
-      {
         name: 'Cerrar Sesión',
         class: ['dropdown-item', 'rounded'],
         router: ['/', 'auth']

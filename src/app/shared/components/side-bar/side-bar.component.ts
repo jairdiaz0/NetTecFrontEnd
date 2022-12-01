@@ -31,10 +31,6 @@ export class SideBarComponent implements OnInit {
         router: ['/', 'home', 'contactUs']
       },
       {
-        name: 'Configuración',
-        router: ['/', 'home', 'settings']
-      },
-      {
         name: 'Salir',
         router: ['/', 'auth']
       }

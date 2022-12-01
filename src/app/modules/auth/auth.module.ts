@@ -6,11 +6,13 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LogInPageComponent } from './pages/log-in-page/log-in-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SignInPageComponent } from './pages/sign-in-page/sign-in-page.component';
 
 
 @NgModule({
   declarations: [
-    LogInPageComponent
+    LogInPageComponent,
+    SignInPageComponent
   ],
   imports: [
     CommonModule,

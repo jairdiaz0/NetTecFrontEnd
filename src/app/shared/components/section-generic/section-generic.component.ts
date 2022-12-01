@@ -24,11 +24,16 @@ export class SectionGenericComponent implements OnInit, OnDestroy {
     "class" : ['titulo', 'h3']
   }
 
+  buttonDelete = {
+    "title" : 'Eliminar Post',
+    "class" : ['btn', 'btn-outline-danger', 'titulo', 'fw-bold', 'mt-2', 'me-auto']
+  }
+
   buttonComment = {
     "title" : 'Ver Comentarios',
     "class" : ['btn', 'btn-outline-success', 'titulo', 'fw-bold', 'mt-2', 'me-2']
   }
-  
+
   buttonAnswer = {
     "title" : 'Responder',
     "class" : ['btn', 'btn-outline-warning', 'titulo', 'fw-bold', 'mt-2']
@@ -56,7 +61,7 @@ export class SectionGenericComponent implements OnInit, OnDestroy {
 
   /**Función que nos permite mostrar/ocultar AnswerBox */
   showAnswerBox(pregunta: PreguntaModelMod):void{
-    pregunta.showAnswerBox = !pregunta.showAnswerBox; 
+    pregunta.showAnswerBox = !pregunta.showAnswerBox;
     if(pregunta.showAnswerBox){
       pregunta.showComments = true;
       this.checkObservable(pregunta);
@@ -76,5 +81,13 @@ export class SectionGenericComponent implements OnInit, OnDestroy {
     if(!pregunta.observableShared){
       pregunta.observableShared= new EventEmitter<any>;
     }
+  }
+
+  checkUserPost(pregunta: PreguntaModelMod){
+    return this.user?.id_usuario == pregunta.usuario?.id_usuario||this.user?.id_rol == 102;
+  }
+
+  deletePostTmp(pregunta:PreguntaModelMod){
+    this.newPosts = this.newPosts?.filter((data)=>{return data != pregunta;})
   }
 }

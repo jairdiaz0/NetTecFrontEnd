@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 /*Importaciones*/
 import { CategoriaModel } from '@core/models/api/categorias.model';
+import { PreguntaModelMod } from '@core/models/api/preguntasMod.model.';
 
 /*Importamos datos de un json*/
 import * as dataRaw from '@data/categories.json';
@@ -15,10 +16,11 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./categories-page.component.css']
 })
 export class CategoriesPageComponent implements OnInit {
-  mockCategorias?:Array<CategoriaModel> = []
+  mockCategorias?:Array<CategoriaModel> = [];
+  mockPostList?:Array<PreguntaModelMod>;
 
   constructor(
-    private _connectionDBService:ConnectionDBService
+    private _connectionDBService$:ConnectionDBService
     ) { }
 
   ngOnInit(): void {
@@ -26,6 +28,7 @@ export class CategoriesPageComponent implements OnInit {
   }
   /**Obtenemos las categorias y las asignamos al Array */
   private async setCategorias(){
-    this.mockCategorias = await this._connectionDBService.getCategorias();
+    this.mockCategorias = await this._connectionDBService$.getCategorias();
+    this.mockPostList = await this._connectionDBService$.getPreguntas();
   }
 }

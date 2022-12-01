@@ -69,7 +69,7 @@ export class LogInPageComponent implements OnInit {
     this.formLogin = new FormGroup(
       {
         email: new FormControl('', [
-          Validators.required, 
+          Validators.required,
           Validators.email,
           Validators.maxLength(this.form.input_email_max_length)
         ]),
@@ -97,7 +97,7 @@ export class LogInPageComponent implements OnInit {
         }
       } catch (error) {
         this.alert.title = this.alert.title_err;
-      } 
+      }
     }
   }
 

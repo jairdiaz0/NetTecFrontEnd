@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center mb-3">
+      <p class="h2 mt-5">Solicitud de Registro</p>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <p>
+        Puedes contactarnos llenando el formulario de abajo. Solo deja tu
+        correo y tu número de control, y nuestro equipo te responderá lo más
+        pronto posible, en el caso de los registrosn se hacen de manera
+        individual validando lo siguiente:
+      </p>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <form class="col-md-12" [formGroup]="formSignIn">
+    <div class="form-group">
+      <label for="emailEsc" class="texto mt-5">Correo institucional</label>
+      <input type="email" class="form-control" placeholder="Ingrese su correo insitucional" formControlName="email" />
+      <label for="numControl" class="texto mt-4">Número de control</label>
+      <input type="number" class="form-control" placeholder="Ingrese número de control" formControlName="controlNumber"/>
+      <label for="texto" class="texto mt-4">Comentarios a tomar en cuenta: </label>
+      <textarea class="form-control" placeholder="Ingrese texto"></textarea>
+      <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+    </div>
+  </form>
+
+</div>

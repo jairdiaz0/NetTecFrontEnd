@@ -17,7 +17,7 @@ export class CommentModelComponent implements OnInit {
     "title": '❤️',
     "class": ['btn', 'btn-outline-danger', 'btn-sm', 'me-3']
   }
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -26,7 +26,7 @@ export class CommentModelComponent implements OnInit {
     }
     this.userLikeComment();
   }
-  
+
   /**Función para obtener la lista de usuarios que le dieron Like a la respuesta */
   private getUsersLikeList(): number[]{
     return []
@@ -49,7 +49,7 @@ export class CommentModelComponent implements OnInit {
       this.changeLike();
     }
   }
-  
+
   /**Función que checa si el usuario le ha dado like al comentario */
   userLikeComment():boolean{
     if(this.respuesta && this.user?.id_usuario){
@@ -60,7 +60,7 @@ export class CommentModelComponent implements OnInit {
     }
     return false;
   }
-  
+
   /**Función para cambiar el estilo del botón Like */
   changeLike():void{
     this.button.class.push('btn-danger');
